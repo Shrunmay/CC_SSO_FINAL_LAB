@@ -1,0 +1,45 @@
+.dashboard-main {
+    font-size: 20px; /* Adjusted font size for mobile */
+    min-height: 100vh; /* Changed to min-height to allow content scrolling */
+    width: 100%;
+    padding: 20px; /* Added padding for better spacing */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dashboard-main p {
+    font-size: 20px; /* Adjusted font size for mobile */
+    padding: 10px; /* Reduced padding for smaller screens */
+    text-align: center; /* Center-align the text */
+}
+
+.logout-button {
+    background: black;
+    color: white;
+    border: 3px solid black;
+    width: 80%; /* Adjusted button width for smaller screens */
+    max-width: 500px; /* Added max-width to limit button width */
+    padding: 12px; /* Reduced padding for smaller screens */
+    border-radius: 25px; /* Slightly reduced border-radius for smaller buttons */
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 20px; /* Increased margin-top for better spacing */
+
+    font-size: 18px; /* Adjusted font size for mobile */
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Added media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .dashboard-main {
+        font-size: 16px; /* Further reduced font size for smaller screens */
+    }
+
+    .logout-button {
+        font-size: 16px; /* Further reduced font size for smaller buttons */
+    }
+}
